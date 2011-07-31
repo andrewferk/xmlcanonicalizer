@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "xmlcanonicalizer"
-    gem.summary = %Q{XML Canonicalizer for Ruby >= 1.92}
+    gem.summary = %Q{XML Canonicalizer for Ruby >= 1.9.2}
     gem.description = %Q{This is taken from XMLCanonicalizer/WSS4R and http://github.com/borisnadion/xml-canonicalizer}
     gem.email = "andrewferk@gmail.com"
     gem.homepage = "http://github.com/andrewferk/xmlcanonicalizer"
@@ -37,8 +37,6 @@ rescue LoadError
     abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
   end
 end
-
-task :test => :check_dependencies
 
 task :default => :test
 
